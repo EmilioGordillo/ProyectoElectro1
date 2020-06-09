@@ -51,6 +51,7 @@ hold off
 xlabel('X')
 ylabel('Y')
 title('Campo Electrico')
+set(gca,'Color','k')
 
 
 nexttile

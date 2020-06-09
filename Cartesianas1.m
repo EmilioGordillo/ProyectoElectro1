@@ -7,7 +7,7 @@ clc; clf; clear;
 a = 1;
 b = 2;
 F = 0;
-N = 2;
+N = 20;
 ep =(8.854187817)*(10.^(-12));
 
 %Declaro el intervalor de los ejes X y Y
@@ -35,7 +35,7 @@ end
 [FX,FY] = gradient(F); 
 FX = -FX;
 FY = -FY;
-FZ = ones(size(FX));
+FZ = sqrt(FX.^2+FY.^2);
 
 %Encuentro la densidad de carga
 [DX,DY] = gradient(gradient(F));
@@ -44,14 +44,11 @@ DY = -ep.*DY;
 D = DX+DY;
 
 %Grafico las superficies y el diagrama de fase
-tiledlayout(2,1)
+tiledlayout(3,1)
 
 nexttile
 surf (X,Y,F);
-hold on
-quiver3(X,Y,F,FX,FY,FZ);
-hold off
-title('Potencial y Campo Eléctrico')
+title('Potencial Eléctrico')
 xlabel('X')
 ylabel('Y')
 zlabel('Potencial Eléctrico')
@@ -64,4 +61,12 @@ xlabel('X')
 ylabel('Y')
 zlabel('Densidad de Carga')
 colorbar
+
+nexttile
+quiver3(X,Y,F,FX,FY,FZ);
+xlabel('X')
+ylabel('Y')
+title('Campo Eléctrico')
+set(gca,'Color','k')
+axis([0 1 0 2])
 

@@ -46,7 +46,7 @@ DY = -ep.*DY;
 D = DX+DY;
 
 %Grafico las superficies y el diagrama de fase
-tiledlayout(2,1)
+tiledlayout(3,1)
 
 nexttile
 quiver3(X,Y,F,FX,FY,FZ);
@@ -66,3 +66,11 @@ ylabel('Y')
 zlabel('Densidad de Carga')
 title('Densidad de Carga')
 colorbar
+
+nexttile
+quiver3(X,Y,F,FX,FY,FZ);
+xlabel('X')
+ylabel('Y')
+title('Campo Eléctrico')
+set(gca,'Color','k')
+axis([0 1 0 2])

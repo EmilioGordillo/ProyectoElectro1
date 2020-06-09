@@ -54,21 +54,54 @@ DX2 = ep*2.*EX2;
 DY2 = ep*2.*EY2;
 D2 = sqrt(DX2.^2+DY2.^2);
 
-nexttile
-surfc(X0,Y0,P0)
+%nexttile
+%surfc(X0,Y0,P0)
 
-hold on
-surfc(X1,Y1,P1)
-hold off
+%hold on
+%surfc(X1,Y1,P1)
+%hold off
 
-hold on
-surfc(X2,Y2,P2)
-hold off
+%hold on
+%surfc(X2,Y2,P2)
+%hold off
 
-xlabel('X')
-ylabel('Y')
-zlabel('Potencial Eléctrico')
-title('Potencial Eléctrico')
+%xlabel('X')
+%ylabel('Y')
+%zlabel('Potencial Eléctrico')
+%title('Potencial Eléctrico')
+
+%nexttile
+%quiver(X0,Y0,EX0,EY0)
+%hold on
+%quiver(X1,Y1,EX1,EY1)
+%hold off
+%hold on
+%quiver(X2,Y2,EX2,EY2)
+%hold off
+%xlabel('X')
+%ylabel('Y')
+%title('Campo Eléctrico')
+
+%nexttile
+%contourf(X0,Y0,P0)
+
+%hold on
+%contourf(X1,Y1,P1)
+%hold off
+
+%hold on
+%contourf(X2,Y2,P2)
+%hold off
+%xlabel('X')
+%ylabel('Y')
+%title('Potencial Eléctrico')
+
+%nexttile
+%contourf(X1,Y1,sig1)
+%xlabel('X')
+%ylabel('Y')
+%title('Densidad de Carga inducida en Esfera de R=a')
+%colorbar
 
 nexttile
 quiver(X0,Y0,EX0,EY0)
@@ -81,27 +114,7 @@ hold off
 xlabel('X')
 ylabel('Y')
 title('Campo Eléctrico')
-
-nexttile
-contourf(X0,Y0,P0)
-
-hold on
-contourf(X1,Y1,P1)
-hold off
-
-hold on
-contourf(X2,Y2,P2)
-hold off
-xlabel('X')
-ylabel('Y')
-title('Potencial Eléctrico')
-
-nexttile
-contourf(X1,Y1,sig1)
-xlabel('X')
-ylabel('Y')
-title('Densidad de Carga inducida en Esfera de R=a')
-colorbar
-
+set(gca,'Color','k')
+axis([-10 10 -10 10])
 
 
