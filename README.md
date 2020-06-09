@@ -8,4 +8,5 @@ Santiago Galicia - 18483
 Kenneth Aldana - 18435
 
 Apartado especial - comentarios curso
+
 Posiblemente no ganemos este curso, pero las risas nunca faltaron, es más faltaron más los puntos que las risas xd
