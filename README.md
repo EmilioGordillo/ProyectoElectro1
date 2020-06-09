@@ -7,6 +7,8 @@ Santiago Galicia - 18483.
 
 Kenneth Aldana - 18435.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Apartado especial - Comentarios del Curso.
 
 Kiondas como posiblemente no ganemos este curso hicimos este trabajo con mucho esfuerzo, esperemos que sea suficiente xd. 
