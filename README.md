@@ -9,4 +9,5 @@ Kenneth Aldana - 18435
 
 Apartado especial - comentarios curso
 
-Posiblemente no ganemos este curso, pero las risas nunca faltaron, es más faltaron más los puntos que las risas xd
+Kiondas como posiblemente no ganemos este curso hicimos este trabajo con mucho esfuerzo, esperemos que sea suficiente xd. 
+Por lo menos las risas no faltaron, creo que faltaron mas los puntos que las risas xd
